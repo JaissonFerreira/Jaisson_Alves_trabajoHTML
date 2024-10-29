@@ -1,0 +1,239 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Imagem Logo*/
+/* Logo e contêiner do logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espaçamento entre o logo e o texto */
+}
+
+#logo-img {
+  width: 100px; /* Tamanho do logo */
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Centraliza o conteúdo do menu */
+#nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Corpo */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #aaaaaa, #888888); /* Gradiente escuro e elegante */
+  background-color: #f2f2f2; /* Cor de fallback */
+}
+
+
+/* Cabeçalho */
+#header {
+  background-image: url('../img/background_header.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Para garantir contraste no texto */
+}
+
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Conteúdo principal */
+#main-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 2px solid #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Galería */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Formulário */
+#quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input, .form-textarea, .submit-button {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.submit-button {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Seção de contato */
+.location-map {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* Rodapé */
+#footer {
+
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+#footer p {
+  margin: 0.5rem 0;
+}
+
+.social-link {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.social-link img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-link img:hover {
+  transform: scale(1.2);
+}
+
+.legal-link {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.legal-link:hover {
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #main-content {
+    padding: 1rem;
+  }
+}
