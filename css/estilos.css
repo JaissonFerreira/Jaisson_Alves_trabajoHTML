@@ -57,7 +57,7 @@ body {
   background-image: url('../img/background_header.png');
   background-size: cover;
   background-position: center;
-  color: #fff; /* Para garantir contraste no texto */
+  color: #fff;
 }
 
 
