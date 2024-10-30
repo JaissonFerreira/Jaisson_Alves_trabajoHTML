@@ -105,7 +105,7 @@ body {
 .section {
   margin-bottom: 2rem;
 }
-
+/*Se agregó una clase active para indicar en qué página se encuentra el usuario.*/
 .active {
   background-size: cover;
   background-position: center;
@@ -247,6 +247,7 @@ p {
     padding: 1rem;
   }
 
+  /*Cambié el ancho a porcentaje para que el tamaño sea adaptable a diferentes pantallas.*/
   iframe {
     width: 100%;
   }

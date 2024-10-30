@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adcionado para quitar el Error -->
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <title>Presupuesto - Barbearia Ficticia</title>
   <link rel="stylesheet" href="../css/estilos.css">
@@ -17,6 +18,7 @@
     <ul class="nav-list">
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="portfolio.html">Galería</a></li>
+      <!--Se agregó una clase active para indicar en qué página se encuentra el usuario. -->
       <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
@@ -26,6 +28,7 @@
 <main id="main-content">
   <h2>Solicitar Presupuesto</h2>
   <form id="quote-form" action="" method="post">
+    <!--Fue adicionado los pattern y los placeholder -->
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]{1,50}" placeholder="Nombre Apelido" required class="form-input">
 
