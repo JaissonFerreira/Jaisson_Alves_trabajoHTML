@@ -246,4 +246,8 @@ p {
   #main-content {
     padding: 1rem;
   }
+
+  iframe {
+    width: 100%;
+  }
 }
